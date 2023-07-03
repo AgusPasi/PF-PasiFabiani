@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'Georgia';
+    src: url(../assets/fonts/NotoSerifGeorgian-VariableFont_wdth\,wght.ttf);
+}
+
+.selected a{
+    font-weight: bold;
+}
+
+body{
+    background: #232323;
+    font-family: 'Georgia';
+    color: #f7f6f6;
+    position: relative;
+    padding-bottom: 60px;
+    min-height: 100vh;
+}
+
+.cabecera{
+    background:black ;
+    font-family: 'Georgia';
+    color: #f7f6f6;
+}
+
+.cabecera .logo{
+    margin-left: 50px;
+    position: relative;
+    top: 30px;
+}
+
+nav {
+    position: relative;
+    bottom: 20px;
+    left: 800px;
+    width: 600px;
+}
+.logo a {
+    text-decoration: none;
+    color: #f7f6f6;
+}
+.menu {
+    display: inline-block;
+    position: relative;
+    /* left: 700px; */
+    padding: 20px;
+}
+
+.menu li {
+    display: inline;
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.menu li:hover{
+    text-underline-offset: 8px;
+    text-decoration: underline; 
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #f7f6f6;
+}
+.titulo{
+    font-size: 30px;
+    margin:50px;
+}
+
+section.main{
+    margin:0 20px 50px 20px; 
+}
+
+.text-home {
+    display: inline-block;
+    overflow: hidden;
+    width: 700px;
+    height: 800px;
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+.text-img {
+    display: inline-block;
+    margin-left: 50px;
+    width: 1000px;
+    height: 800px;
+}
+
+.text-img img{
+    width: 1000px;
+    height: 800px;
+    border-radius: 20px;
+}
+section.galery{
+    text-align: center;
+    margin: 20px;
+}
+.g-img {
+  width: 45%;
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+.g-img img {
+    max-width: 800px;
+    max-height: 500px;
+}
+     
+.pie-pagina {
+    position: absolute;
+    background: black;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    
+    
+}
+.pie-pagina div.info {
+    font-size: 12px;
+    text-align: center;
+}
+.pie-pagina div.icons{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.pie-pagina div.icons a{
+    margin: 5px;
+}

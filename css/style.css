@@ -75,28 +75,24 @@ nav {
 }
 
 section.main{
-    margin:0 20px 50px 20px; 
+    margin:10px;  
+    display: flex; 
+    /* flex-direction: column; *//* Si comento esto se rompe el index y las paginas no estilizadas se normalizan alguna usaran bootstrap otras flex parcialmente se arreglaria si pongo flex direction:column a los items solucionar mañana adios agustin de las 2am*/
 }
 
 .text-home {
-    display: inline-block;
-    overflow: hidden;
-    width: 700px;
-    height: 800px;
-    margin-right: 50px;
-    margin-left: 30px;
+    padding: 20px;
+    margin-left: 20px;
 }
 
 .text-img {
-    display: inline-block;
-    margin-left: 50px;
-    width: 1000px;
-    height: 800px;
+    margin-right: 20px; 
+    padding: 20px;
 }
 
 .text-img img{
     width: 1000px;
-    height: 800px;
+    height: 700px;
     border-radius: 20px;
 }
 section.galery{

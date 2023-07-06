@@ -29,7 +29,7 @@ body{
 }
 
 .cabecera .logo{
-    margin-left: 50px;
+    margin-left: 30px;
     position: relative;
     top: 30px;
 }
@@ -71,37 +71,44 @@ nav {
 }
 .titulo{
     font-size: 30px;
-    margin:50px;
+    margin:30px;
 }
 
 section.main{
     margin:10px;  
-    display: flex; 
-    /* flex-direction: column; *//* Si comento esto se rompe el index y las paginas no estilizadas se normalizan alguna usaran bootstrap otras flex parcialmente se arreglaria si pongo flex direction:column a los items solucionar mañana adios agustin de las 2am*/
 }
 
 .text-home {
     padding: 20px;
-    margin-left: 20px;
 }
 
 .text-img {
-    margin-right: 20px; 
     padding: 20px;
 }
 
 .text-img img{
-    width: 1000px;
-    height: 700px;
     border-radius: 20px;
 }
+
 section.galery{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin: 20px;
 }
-.g-img {
-  width: 45%;
-  display: inline-block;
+
+.carousel {
+    width: 1200px; /* Ajusta el ancho deseado */
+    height: 600px; /* Ajusta la altura deseada */
+  }
+
+  .carousel-item img {
+    width: 100%; /* Ajusta el ancho deseado */
+    height: auto; /* Mantiene la proporción de aspecto */
+  }
+  
+
+/* .g-img {
+  width:100% ;
   margin: 10px;
   text-align: center;
 }
@@ -109,7 +116,7 @@ section.galery{
 .g-img img {
     max-width: 800px;
     max-height: 500px;
-}
+} */
      
 .pie-pagina {
     position: absolute;
@@ -132,4 +139,12 @@ section.galery{
 
 .pie-pagina div.icons a{
     margin: 5px;
+}
+
+@media screen and (max-width:600px) {
+    
+    /* section.main{
+        display: flex;
+        flex-direction: column-reverse;
+    } */
 }

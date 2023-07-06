@@ -23,44 +23,58 @@
      </nav>
     </header>
     <h2 class="titulo">THE WITCHER</h2>
-    <section class="main">
-        <div class="text-home">
-            <p>Basados en la serie de libros de fantasía escrita por Andrzej Sapkowski, los juegos de The Witcher te transportan a un mundo lleno de magia, monstruos y conspiraciones intrigantes. Explora un universo oscuro y peligroso en el que asumes el papel de Geralt de Rivia, un cazador de monstruos legendario conocido como "el brujo".
-            </p>
-            <p>    
-                Los juegos de The Witcher destacan por su narrativa rica y compleja, donde tus elecciones y acciones tienen un impacto significativo en el desarrollo de la historia y el destino de los personajes que encuentras en tu viaje. La trama se sumerge en temas como la política, la moralidad y el sacrificio, y te desafía a tomar decisiones difíciles que moldean tu experiencia de juego.
-            </p>   
-                La atención al detalle y la meticulosa construcción del mundo por parte de CD Projekt RED son evidentes en cada rincón de los juegos. Los reinos que explorarás están llenos de paisajes impresionantes, personajes memorables y misiones intrigantes que te mantendrán absorto en esta aventura épica.
-            <p>    
-                Los juegos de The Witcher han sido aclamados tanto por la crítica como por los jugadores, gracias a su combinación de jugabilidad desafiante, gráficos impresionantes y una historia profunda y emocional. Estos títulos te transportarán a un mundo inmersivo donde tus habilidades como brujo serán puestas a prueba.
-            </p>   
-            <p>
-                ¡Prepárate para sumergirte en un viaje lleno de peligro, misterio y descubrimientos en los juegos de The Witcher!
-            </p>
+    <main class="container-fluid">
+        <div class="row">
+        <div class="col-lg-6">
+            <div class="text-home">
+                <p>Basados en la serie de libros de fantasía escrita por Andrzej Sapkowski, los juegos de The Witcher te transportan a un mundo lleno de magia, monstruos y conspiraciones intrigantes. Explora un universo oscuro y peligroso en el que asumes el papel de Geralt de Rivia, un cazador de monstruos legendario conocido como "el brujo".
+                </p>
+                <p>    
+                    Los juegos de The Witcher destacan por su narrativa rica y compleja, donde tus elecciones y acciones tienen un impacto significativo en el desarrollo de la historia y el destino de los personajes que encuentras en tu viaje. La trama se sumerge en temas como la política, la moralidad y el sacrificio, y te desafía a tomar decisiones difíciles que moldean tu experiencia de juego.
+                </p>   
+                    La atención al detalle y la meticulosa construcción del mundo por parte de CD Projekt RED son evidentes en cada rincón de los juegos. Los reinos que explorarás están llenos de paisajes impresionantes, personajes memorables y misiones intrigantes que te mantendrán absorto en esta aventura épica.
+                <p>    
+                    Los juegos de The Witcher han sido aclamados tanto por la crítica como por los jugadores, gracias a su combinación de jugabilidad desafiante, gráficos impresionantes y una historia profunda y emocional. Estos títulos te transportarán a un mundo inmersivo donde tus habilidades como brujo serán puestas a prueba.
+                </p>   
+                <p>
+                    ¡Prepárate para sumergirte en un viaje lleno de peligro, misterio y descubrimientos en los juegos de The Witcher!
+                </p>
+            </div>
         </div>
+        <div class="col-lg-6 ">
         <div class="text-img">
-            <img src="./assets/media/home-text.jpg" alt="">
+            <img class="img-fluid" src="./assets/media/home-text.jpg" alt="">
         </div>
-    </section>
+    </div>
+</div>
+    </main>
     <hr>
     <h2 class="titulo">GALERIA</h2>
     <section class="galery">
-        <div class="g-img">
-            
-            <img src="./assets/media/imagen1.jpg" alt="witcher3">
-       </div>
-        <div class="g-img">
-           <img src="./assets/media/imagen2.jpg" alt="witcher1">
-    
-        </div>
-        <div class="g-img">
-            
-           <img src="./assets/media/imagen3.jpg" alt="witche2">
-        </div>
-        <div class="g-img">
-            <img src="./assets/media/imagen4.jpg" alt="witcher3bis">
-            
-        </div>
+        <div id="customSlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/media/imagen1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/media/imagen2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/media/imagen3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/media/imagen4.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#customSlider" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#customSlider" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
 
     <footer class="pie-pagina">

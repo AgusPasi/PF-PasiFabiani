@@ -18,40 +18,51 @@ body{
     font-family: 'Georgia';
     color: #f7f6f6;
     position: relative;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
     min-height: 100vh;
 }
+/* Navbar */
+.logo{
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-left: 10px;
+    font-size: 30px;
+    line-height: inherit;
+    white-space: nowrap;
+}
 
-.cabecera{
-    background:black ;
+.logo a{
     font-family: 'Georgia';
     color: #f7f6f6;
-}
-
-.cabecera .logo{
-    margin-left: 30px;
-    position: relative;
-    top: 30px;
-}
-
-nav {
-    position: relative;
-    bottom: 20px;
-    left: 800px;
-    width: 600px;
-}
-.logo a {
     text-decoration: none;
-    color: #f7f6f6;
+    font-weight: bold;
 }
-.menu {
+
+h5{
+    color: #f7f6f6;
+   
+   }
+.offcanvas{
+       background-color: black;
+}
+.offcanvas-body{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+}
+.opciones{
+    display: flex;
+    justify-content: center;
+}
+/* Codigo viejo, guardo a ver si llego a reutilizar para otra pag :( */
+/* .menu {
     display: inline-block;
     position: relative;
-    /* left: 700px; */
     padding: 20px;
-}
+} */
 
-.menu li {
+/* .menu li {
     display: inline;
     list-style: none;
     padding-left: 10px;
@@ -68,7 +79,8 @@ nav {
     text-decoration: none;
     font-size: 18px;
     color: #f7f6f6;
-}
+} */
+
 .titulo{
     font-size: 30px;
     margin:30px;
@@ -79,6 +91,7 @@ section.main{
 }
 
 .text-home {
+    overflow: hidden;
     padding: 20px;
 }
 
@@ -90,22 +103,6 @@ section.main{
     border-radius: 20px;
 }
 
-section.galery{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
-.carousel {
-    width: 1200px; /* Ajusta el ancho deseado */
-    height: 600px; /* Ajusta la altura deseada */
-  }
-
-  .carousel-item img {
-    width: 100%; /* Ajusta el ancho deseado */
-    height: auto; /* Mantiene la proporción de aspecto */
-  }
-  
 
 /* .g-img {
   width:100% ;
@@ -117,16 +114,15 @@ section.galery{
     max-width: 800px;
     max-height: 500px;
 } */
-     
-.pie-pagina {
+/* Footer */
+/* .pie-pagina {
     position: absolute;
     background: black;
     bottom: 0;
     width: 100%;
     padding: 20px;
-    
-    
 }
+
 .pie-pagina div.info {
     font-size: 12px;
     text-align: center;
@@ -140,11 +136,17 @@ section.galery{
 .pie-pagina div.icons a{
     margin: 5px;
 }
-
-@media screen and (max-width:600px) {
-    
-    /* section.main{
-        display: flex;
-        flex-direction: column-reverse;
-    } */
-}
+ */
+ .pie-pagina{
+    margin-top: 10px;
+    padding: 20px;
+ }
+ .info{
+    text-align: center;
+ }
+ .icons{
+      display: flex;
+      flex-direction: row;
+     justify-content: space-around;
+     padding: 10px; 
+ }

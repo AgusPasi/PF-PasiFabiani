@@ -6,62 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Witcher Page - Contacto
     </title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="cabecera">
-     <h1 class="logo"><a href="../index.html">Witcher of Blaviken</a></h1>
-     <nav>
-        <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./personajes.html">Personajes</a></li>
-            <li><a href="./bestiario.html">Bestiario</a></li>
-            <li><a href="./videojuegos.html">Videojuegos</a></li>
-            <li><span class="selected"><a href="./contacto.html">Contacto</a></span></li>
-         </ul>
-     </nav>
-    </header>
-    <h2 class="titulo">CONTACTO</h2>
-    <section class="main">
-        <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio voluptate eligendi illum, rem tenetur, sunt magnam iure soluta totam dolore eius perspiciatis impedit incidunt atque, magni consectetur. Error, inventore necessitatibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ullam consequuntur, perferendis omnis modi dolores soluta voluptate inventore saepe obcaecati eius aliquid eos provident quidem distinctio blanditiis ad odio et.m
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus distinctio, facilis omnis pariatur enim alias quod nihilsed consequuntur eum sint dicta, nesciunt hic maiores vel molestias doloribus nostrum!
+    <nav class="navbar navbar-expand-xl navbar-dark bg-black">
+        <div class="container-fluid">
+
+            <h1 class="logo"><a href="../index.html">Witcher of Blaviken</a></h1>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+          <div class="offcanvas offcanvas-start" id="menu" tabindex="-1">
+            <div class="offcanvas-header" data-bs-theme="dark">
+                <h5>Witcher of Blaviken</h5>
+                <button class="btn-close" type="button" aria-label="close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav opciones">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../views/personajes.html">Personajes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../views/bestiario.html">Bestiario</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../views/videojuegos.html">Videojuegos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="../views/contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+            </div>     
+          </div>
+        </div>
+      </nav>
+      <h2 class="titulo">CONTACTO</h2>
+      <main class="container-fluid">
+        <section class="row">
+        <div class="col-xl-5"><p>Si tenés alguna pregunta, sugerencia o simplemente querés ponerte en contacto con nosotros, completa el formulario a continuación. Estamos acá para ayudarte y responder a cualquier consulta que puedas tener, tu opinión es de gran interés!
         </p></div>
+        <div class="col col-xl-7">
         <form action="#">
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre">
+            <div class="mb-3 col-md-10">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" name="nombre" class="form-control" id="nombre">
+            </div>
+            <div class="mb-3 col-md-10">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" name="apellido" class="form-control"  id="apellido">
+            </div>
+            <div class="mb-3 col-md-10">
+                <label for="email" class="form-label">Mail</label>
+                <input type="text" name="email" class="form-control"  id="email">
+            </div>
+            <div class="mb-3 col-md-10">
+                <label for="coment" class="form-label">Comentario</label>
+                <textarea name="coment" class="form-control"  id="coment" cols="30" rows="10"></textarea>
             </div>
             <div>
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido">
-            </div>
-            <div>
-                <label for="email">Mail</label>
-                <input type="text" name="email" id="email">
-            </div>
-            <div>
-                <label for="coment">Comentario</label>
-                <textarea name="coment" id="coment" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Enviar">
+                <div>
+                <input type="submit" class="btn button-black" value="Enviar">
                 <!-- <button type="submit">Enviar</button> -->
-                <input type="reset" value="Cancelar">
             </div>
         </form>
-    </section>
+        </div>
+        </section>
+    </main>
 
     <footer class="pie-pagina">
-        <div class="info">
-            <p>MiniFanpage sin fines de lucro <br>
-            Agustin Pasi Fabiani.
-            </p>
-        </div>
-        <div class="icons">
-            <a href="https://twitter.com/witchergame" target="_blank"><img src="../assets/media/twitter.png" alt="twitter"></a>
-            <a href="https://www.youtube.com/thewitcher" target="_blank"><img src="../assets/media/youtube.png" alt="youtube" ></a>
-            <a href="https://www.facebook.com/ESthewitcher/?brand_redir=9659019330" target="_blank"><img src="../assets/media/facebook.png" alt="facebook"></a>
-        </div>
+                    <div class="info">
+                        <p>MiniFanpage sin fines de lucro <br>
+                        Agustin Pasi Fabiani.
+                        </p>
+                    </div>
+                    <div class="icons">
+                        <a href="https://twitter.com/witchergame" target="_blank"><img src="../assets/media/twitter.png" alt="twitter"></a>
+                        <a href="https://www.youtube.com/thewitcher" target="_blank"><img src="../assets/media/youtube.png" alt="youtube" ></a>
+                        <a href="https://www.facebook.com/ESthewitcher/?brand_redir=9659019330" target="_blank"><img src="../assets/media/facebook.png" alt="facebook"></a>
+                </div>
     </footer>
+
+    <script src="../assets/js/popper.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
 </body>
 </html>

@@ -18,8 +18,11 @@ body{
     font-family: 'Georgia';
     color: #f7f6f6;
     position: relative;
-    /* padding-bottom: 60px; */
+    padding-bottom: 120px;
     min-height: 100vh;
+}
+p{
+    font-size: 18px;
 }
 /* Navbar */
 .logo{
@@ -55,31 +58,6 @@ h5{
     display: flex;
     justify-content: center;
 }
-/* Codigo viejo, guardo a ver si llego a reutilizar para otra pag :( */
-/* .menu {
-    display: inline-block;
-    position: relative;
-    padding: 20px;
-} */
-
-/* .menu li {
-    display: inline;
-    list-style: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    
-}
-
-.menu li:hover{
-    text-underline-offset: 8px;
-    text-decoration: underline; 
-}
-
-.menu li a {
-    text-decoration: none;
-    font-size: 18px;
-    color: #f7f6f6;
-} */
 
 .titulo{
     font-size: 30px;
@@ -87,7 +65,7 @@ h5{
 }
 
 section.main{
-    margin:10px;  
+    margin-bottom:100px;  
 }
 
 .text-home {
@@ -103,50 +81,40 @@ section.main{
     border-radius: 20px;
 }
 
-
-/* .g-img {
-  width:100% ;
-  margin: 10px;
-  text-align: center;
+.button-black{
+    background-color: black;
+    color: #f7f6f6;
 }
-
-.g-img img {
-    max-width: 800px;
-    max-height: 500px;
-} */
+ .container-fluid,section{
+    padding: 20px;
+ }
 /* Footer */
-/* .pie-pagina {
+.pie-pagina {
     position: absolute;
     background: black;
     bottom: 0;
     width: 100%;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .pie-pagina div.info {
-    font-size: 12px;
+    flex: 1;
+    font-size: 13px;
     text-align: center;
-}
-.pie-pagina div.icons{
-    position: absolute;
-    top: 20px;
-    right: 20px;
 }
 
 .pie-pagina div.icons a{
     margin: 5px;
 }
- */
- .pie-pagina{
-    margin-top: 10px;
-    padding: 20px;
- }
- .info{
-    text-align: center;
- }
- .icons{
-      display: flex;
-      flex-direction: row;
-     justify-content: space-around;
-     padding: 10px; 
- }
+
+@media screen and (max-width:1199px) {
+     .pie-pagina {
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    } 
+}

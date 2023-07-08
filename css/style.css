@@ -9,9 +9,7 @@
     src: url(../assets/fonts/NotoSerifGeorgian-VariableFont_wdth\,wght.ttf);
 }
 
-.selected a{
-    font-weight: bold;
-}
+
 
 body{
     background: #232323;
@@ -21,10 +19,15 @@ body{
     padding-bottom: 120px;
     min-height: 100vh;
 }
-p{
+/* p{
     font-size: 18px;
-}
+} */
+
 /* Navbar */
+.selected a{
+    font-weight: bold;
+}
+
 .logo{
     display: inline-block;
     padding-top: .3125rem;
@@ -42,30 +45,37 @@ p{
     font-weight: bold;
 }
 
-h5{
-    color: #f7f6f6;
-   
-   }
 .offcanvas{
        background-color: black;
 }
+
 .offcanvas-body{
        display: flex;
        flex-direction: column;
        justify-content: space-between;
 }
+
 .opciones{
     display: flex;
     justify-content: center;
 }
 
-.titulo{
-    font-size: 30px;
-    margin:30px;
+.nav-item a:hover{
+    text-underline-offset: 8px;
+    text-decoration: underline;
+}
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
 }
 
-section.main{
-    margin-bottom:100px;  
+/* fin navbar */
+
+.titulo{
+    font-size: 30px;
+    padding:10px;
+    margin: 10px 0 10px 20px;
+    box-sizing: border-box;
 }
 
 .text-home {
@@ -88,7 +98,9 @@ section.main{
  .container-fluid,section{
     padding: 20px;
  }
+
 /* Footer */
+
 .pie-pagina {
     position: absolute;
     background: black;
@@ -110,11 +122,58 @@ section.main{
     margin: 5px;
 }
 
+/* fin footer */
+
+/* Videojuegos */
+.video {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; 
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.shop a{
+   padding: 10px; 
+}
+/* falta hacer que el conseguilo en cuando es mobile pase a estar por debajo del video*/
+
+/* fin videojuegos */
+
+
+
 @media screen and (max-width:1199px) {
-     .pie-pagina {
-        padding: 10px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-    } 
+    .pie-pagina {
+       padding: 10px;
+       box-sizing: border-box;
+       display: flex;
+       flex-direction: column;
+   } 
+   .video{
+       margin-top: 10px;
+   }
+   .opciones{
+    margin-left: 20px;
+   }
+   .opciones li{
+    border-bottom: 1px solid;
+   }
+   .opciones li:last-child{
+    border-bottom: none;
+   }
+   h5{
+    color: #f7f6f6;
+    margin-left: 10px;
+   }
+   .home{
+    display: flex;
+    flex-direction: column-reverse;
+   }
 }

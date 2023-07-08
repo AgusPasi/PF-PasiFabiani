@@ -6,94 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Witcher Page - Videojuegos
     </title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="cabecera">
-     <h1 class="logo"><a href="../index.html">Witcher of Blaviken</a></h1>
-     <nav>
-        <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./personajes.html">Personajes</a></li>
-            <li><a href="./bestiario.html">Bestiario</a></li>
-            <li><span class="selected"><a href="./videojuegos.html">Videojuegos</a></span></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-         </ul>
-     </nav>
-    </header>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-black">
+        <div class="container-fluid">
+
+            <h1 class="logo"><a href="../index.html">Witcher of Blaviken</a></h1>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+          <div class="offcanvas offcanvas-start" id="menu" tabindex="-1">
+            <div class="offcanvas-header" data-bs-theme="dark">
+                <h5>Witcher of Blaviken</h5>
+                <button class="btn-close" type="button" aria-label="close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav opciones">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../views/personajes.html">Personajes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../views/bestiario.html">Bestiario</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../views/videojuegos.html">Videojuegos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="../views/contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+            </div>     
+          </div>
+        </div>
+      </nav>
     <h2 class="titulo">VIDEOJUEGOS</h2>
-    <section class="main">
-    <div class="text-video">
-        <h3 class="subtitulo">THE WITCHER 1</h3>
-        <div class="texto">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor officia, est laboriosam ad cupiditate totam? Totam odio dolorem, qui optio numquam possimus dolor cupiditate a alias enim facere, odit nam dolorum maxime sequi ut quis obcaecati laborum natus earum provident? Provident tempora molestias odio culpa doloribus vitae veritatis facilis velit quo, libero voluptatibus nam numquam reiciendis dicta dolores molestiae omnis repellat mollitia dolorum, rem error vero nostrum voluptatem. Rerum esse ex sint, provident sit officiis, sequi quam magni laudantium molestiae temporibus mollitia harum minima tempora quae repellat, expedita cupiditate maxime dicta assumenda iure quod. Eaque minima voluptatem ullam nemo rerum?</p>
+    <main class="container-fluid">
+            <section class="row text-video">
+                <div class="col-12 col-xl-6 col-md-12 col-sm-12 lote-texto">
+                    <h3 class="subtitulo">THE WITCHER: ENHANCED EDITION</h3>
+                    <div class="texto">
+                        <p>"The Witcher" es un juego de rol basado en la saga de libros del mismo nombre. Encarnas a Geralt de Rivia, un cazador de monstruos con habilidades sobrenaturales. Ambientado en un mundo oscuro y violento, te sumergirás en una trama épica llena de magia, política y guerra. Tus decisiones morales afectarán el curso de la historia y el destino de los personajes que encuentres. Explora tierras peligrosas, completa misiones y descubre los secretos que acechan en cada rincón. Con combates estratégicos y una excelente narrativa, "The Witcher" te transportará a un universo lleno de intriga y aventura.</p>
+                    </div>
+                    <div class="shop">
+                        <p>Conseguilo en:</p>
+                        <a href="https://store.steampowered.com/app/20900/The_Witcher_Enhanced_Edition_Directors_Cut/" target="_blank"><img src="../assets/media/steam.png" alt=""></a>
+                        <a href="https://www.gog.com/en/game/the_witcher" target="_blank"><img src="../assets/media/gog.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-md-12 col-sm-12 lote-video">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/w2F_Ti_6E_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreens></iframe>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="row text-video">
+                <div class="col-12 col-xl-6 col-md-12 col-sm-12 lote-texto">
+                    <h3 class="subtitulo">THE WITCHER 2: ASSASSIN'S OF KINGS</h3>
+                    <div class="texto">
+                        <p>"The Witcher 2" continúa la historia de Geralt de Rivia en una aventura épica. Enfrentado a conspiraciones y conflictos políticos, Geralt se embarca en la caza de un asesino misterioso. Con decisiones impactantes y consecuencias significativas, tu papel como jugador decidirá el destino de los personajes y el mundo en general. El combate ha sido mejorado, ofreciendo peleas tácticas y desafiantes. Explora impresionantes paisajes y enfréntate a criaturas sobrenaturales en un mundo inmersivo lleno de dilemas morales. Prepárate para una experiencia apasionante llena de giros y repercusiones emocionantes.</p>
+                    </div>
+                    <div class="shop">
+                        <p>Conseguilo en:</p>
+                        <a href="https://store.steampowered.com/app/20920/The_Witcher_2_Assassins_of_Kings_Enhanced_Edition/" target="_blank"><img src="../assets/media/steam.png" alt=""></a>
+                        <a href="https://www.gog.com/en/game/the_witcher_2" target="_blank"><img src="../assets/media/gog.png" alt=""></a>
+                    </div>   
+                </div>
+                <div class="col-12 col-xl-6 col-md-12 col-sm-12 lote-video">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WwCXw8m0PHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            <hr>
+    <section class="row text-video">
+        <div class="col-12 col-xl-6 col-md-12 col-sm-12 lote-texto">
+            <h3 class="subtitulo">THE WITCHER 3: WILD HUNT</h3>
+            <div class="texto">
+                <p>"The Witcher 3" es ampliamente considerado como el mejor juego de la saga, y con razón. Sumérgete en un mundo vasto y hermoso lleno de detalles impresionantes. La historia te atrapará con su narrativa rica y emocional, llena de giros inesperados y personajes memorables. Las misiones secundarias están meticulosamente diseñadas, ofreciendo historias envolventes y decisiones difíciles con impacto real en el mundo del juego. El sistema de combate es fluido y desafiante, permitiéndote utilizar magia, armas y tácticas para derrotar a tus enemigos. Además, el juego presenta un sistema de elecciones y consecuencias excepcionalmente bien desarrollado, donde tus decisiones pueden tener repercusiones significativas en el desarrollo de la trama. Todo esto se complementa con gráficos impresionantes y una banda sonora épica. Además, "The Witcher 3" cuenta con dos DLCs altamente recomendados: "Hearts of Stone" y "Blood and Wine". Estas expansiones amplían aún más la experiencia de juego, ofreciendo nuevas historias, áreas para explorar y desafíos emocionantes. Con los DLCs, "The Witcher 3" se convierte en una experiencia aún más completa y satisfactoria. No te pierdas la oportunidad de sumergirte en este extraordinario mundo de fantasía.</p>
+            </div>
+            <div class="shop">
+                <p>Conseguilo en:</p>
+                <a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/" target="_blank"><img src="../assets/media/steam.png" alt=""></a>
+                <a href="https://www.gog.com/en/game/the_witcher_3_wild_hunt_game_of_the_year_edition" target="_blank"><img src="../assets/media/gog.png" alt=""></a>
+            </div>
         </div>
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/w2F_Ti_6E_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="col-12 col-xl-6 col-md-12 col-sm-12 lote-video">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/c0i88t0Kacs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="shop">
-            <p>Conseguilo en:</p>
-            <a href="#"><img src="../assets/media/steam.png" alt=""></a>
-            <a href="#"><img src="../assets/media/gog.png" alt=""></a>
-        </div>
-    </div>
-    <div class="text-video">
-        <h3 class="subtitulo">THE WITCHER 2</h3>
-        <div class="texto">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor officia, est laboriosam ad cupiditate totam? Totam odio dolorem, qui optio numquam possimus dolor cupiditate a alias enim facere, odit nam dolorum maxime sequi ut quis obcaecati laborum natus earum provident? Provident tempora molestias odio culpa doloribus vitae veritatis facilis velit quo, libero voluptatibus nam numquam reiciendis dicta dolores molestiae omnis repellat mollitia dolorum, rem error vero nostrum voluptatem. Rerum esse ex sint, provident sit officiis, sequi quam magni laudantium molestiae temporibus mollitia harum minima tempora quae repellat, expedita cupiditate maxime dicta assumenda iure quod. Eaque minima voluptatem ullam nemo rerum?</p>
-        </div>
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/WwCXw8m0PHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="shop">
-            <p>Conseguilo en:</p>
-            <a href="#"><img src="../assets/media/steam.png" alt=""></a>
-            <a href="#"><img src="../assets/media/gog.png" alt=""></a>
-        </div>
-    </div>
-    <div class="text-video">
-        <h3 class="subtitulo">THE WITCHER 3</h3>
-        <div class="texto">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor officia, est laboriosam ad cupiditate totam? Totam odio dolorem, qui optio numquam possimus dolor cupiditate a alias enim facere, odit nam dolorum maxime sequi ut quis obcaecati laborum natus earum provident? Provident tempora molestias odio culpa doloribus vitae veritatis facilis velit quo, libero voluptatibus nam numquam reiciendis dicta dolores molestiae omnis repellat mollitia dolorum, rem error vero nostrum voluptatem. Rerum esse ex sint, provident sit officiis, sequi quam magni laudantium molestiae temporibus mollitia harum minima tempora quae repellat, expedita cupiditate maxime dicta assumenda iure quod. Eaque minima voluptatem ullam nemo rerum?</p>
-        </div>
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/c0i88t0Kacs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="shop">
-            <p>Conseguilo en:</p>
-            <a href="#"><img src="../assets/media/steam.png" alt=""></a>
-            <a href="#"><img src="../assets/media/gog.png" alt=""></a>
-        </div>
-    </div>
-    <div class="text-video">
-        <h3 class="subtitulo">GWENT: THE WITCHER CARD GAME</h3>
-        <div class="texto">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor officia, est laboriosam ad cupiditate totam? Totam odio dolorem, qui optio numquam possimus dolor cupiditate a alias enim facere, odit nam dolorum maxime sequi ut quis obcaecati laborum natus earum provident? Provident tempora molestias odio culpa doloribus vitae veritatis facilis velit quo, libero voluptatibus nam numquam reiciendis dicta dolores molestiae omnis repellat mollitia dolorum, rem error vero nostrum voluptatem. Rerum esse ex sint, provident sit officiis, sequi quam magni laudantium molestiae temporibus mollitia harum minima tempora quae repellat, expedita cupiditate maxime dicta assumenda iure quod. Eaque minima voluptatem ullam nemo rerum?</p>
-        </div>
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/5yu7FVZOyAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="shop">
-            <p>Conseguilo en:</p>
-            <a href="#"><img src="../assets/media/steam.png" alt=""></a>
-            <a href="#"><img src="../assets/media/gog.png" alt=""></a>
-        </div>
-    </div>
-    <div class="text-video">
-        <h3 class="subtitulo">THRONEBREAKER: A WITCHER TALES</h3>
-        <div class="texto">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor officia, est laboriosam ad cupiditate totam? Totam odio dolorem, qui optio numquam possimus dolor cupiditate a alias enim facere, odit nam dolorum maxime sequi ut quis obcaecati laborum natus earum provident? Provident tempora molestias odio culpa doloribus vitae veritatis facilis velit quo, libero voluptatibus nam numquam reiciendis dicta dolores molestiae omnis repellat mollitia dolorum, rem error vero nostrum voluptatem. Rerum esse ex sint, provident sit officiis, sequi quam magni laudantium molestiae temporibus mollitia harum minima tempora quae repellat, expedita cupiditate maxime dicta assumenda iure quod. Eaque minima voluptatem ullam nemo rerum?</p>
-        </div>
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/PXwq5rsOz88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="shop">
-            <p>Conseguilo en:</p>
-            <a href="#"><img src="../assets/media/steam.png" alt=""></a>
-            <a href="#"><img src="../assets/media/gog.png" alt=""></a>
-        </div>
-    </div>
     </section>
+    <hr>
+    <section class="row text-video">
+        <div class="col-12 col-xl-6 col-md-12 col-sm-12 lote-texto">
+            <h3 class="subtitulo">GWENT: THE WITCHER CARD GAME</h3>
+            <div class="texto">
+                <p>"Gwent: The Witcher Card Game" es un juego de cartas gratuito basado en el universo de The Witcher que se ha convertido en un fenómeno por derecho propio. Con una mecánica de juego estratégica y adictiva, te sumergirás en emocionantes duelos de cartas mientras intentas superar a tus oponentes utilizando astucia y habilidad. Cada partida es una batalla mental en la que debes construir el mejor mazo posible, aprovechando las sinergias entre las diferentes cartas y las habilidades únicas de tus facciones. La variedad de cartas y estrategias disponibles te mantendrán enganchado, mientras te esfuerzas por mejorar tus habilidades y ascender en el competitivo mundo del Gwent. Además, el juego cuenta con un diseño visual impresionante y una música cautivadora que te sumergirán aún más en su atmósfera. Ya sea que estés buscando desafiar a otros jugadores en línea o disfrutar de una campaña para un jugador, Gwent ofrece una experiencia de juego profunda y gratificante que seguramente encantará tanto a los fanáticos de The Witcher como a los amantes de los juegos de cartas.</p>
+            </div>
+            <div class="shop">
+                <p>Conseguilo en:</p>
+                <a href="https://store.steampowered.com/app/1284410/GWENT_The_Witcher_Card_Game/" target="_blank"><img src="../assets/media/steam.png" alt=""></a>
+                <a href="https://www.gog.com/en/game/gwent_the_witcher_card_game" target="_blank"><img src="../assets/media/gog.png" alt=""></a>
+            </div>
+        </div>
+        <div class="col-12 col-xl-6 col-md-12 col-sm-12 lote-video">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5yu7FVZOyAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="row text-video">   
+        <div class="col-12 col-xl-6 col-md-12 col-sm-12 lote-texto">
+            <h3 class="subtitulo">THRONEBREAKER: A WITCHER TALES</h3>
+            <div class="texto">
+                <p>"Thronebreaker: The Witcher Tales" es un juego de rol basado en el universo de The Witcher que ofrece una experiencia narrativa y estratégica excepcional. Te sumergirás en un viaje épico como la reina Meve de Lyria y Rivia, mientras luchas por proteger tu reino de la invasión nilfgaardiana. A medida que avanzas en la historia, tomarás decisiones difíciles que afectarán el curso de la trama y el destino de los personajes que te rodean. Además de las emocionantes batallas por turnos, tendrás la oportunidad de explorar hermosos entornos, resolver acertijos y reunir recursos para fortalecer tu ejército. La trama intrigante, los personajes memorables y la atmósfera rica hacen de Thronebreaker una experiencia única en su tipo. Con una narrativa profunda, un gameplay estratégico y una presentación visual impresionante, este juego es una joya para los fanáticos de The Witcher y los amantes de los juegos de rol. Prepárate para tomar decisiones difíciles, enfrentarte a poderosos enemigos y luchar por el futuro de tu reino en Thronebreaker.</p>
+            </div>
+            <div class="shop">
+                <p>Conseguilo en:</p>
+                <a href="https://store.steampowered.com/app/973760/Thronebreaker_The_Witcher_Tales/" target="_blank"><img src="../assets/media/steam.png" alt=""></a>
+                <a href="https://www.gog.com/en/game/thronebreaker_the_witcher_tales" target="_blank"><img src="../assets/media/gog.png" alt=""></a>
+            </div>
+        </div>
+        <div class="col-12 col-xl-6 col-md-12 col-sm-12 lote-video">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PXwq5rsOz88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    </main>
     <footer class="pie-pagina">
         <div class="info">
             <p>MiniFanpage sin fines de lucro <br>
@@ -104,7 +153,9 @@
             <a href="https://twitter.com/witchergame" target="_blank"><img src="../assets/media/twitter.png" alt="twitter"></a>
             <a href="https://www.youtube.com/thewitcher" target="_blank"><img src="../assets/media/youtube.png" alt="youtube" ></a>
             <a href="https://www.facebook.com/ESthewitcher/?brand_redir=9659019330" target="_blank"><img src="../assets/media/facebook.png" alt="facebook"></a>
-        </div>
-    </footer>
+    </div>
+</footer>
+    <script src="../assets/js/popper.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
 </body>
 </html>

@@ -6,21 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Witcher Page - Personajes
     </title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="cabecera">
-     <h1 class="logo"><a href="../index.html">Witcher of Blaviken</a></h1>
-     <nav>
-        <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><span class="selected"><a href="./personajes.html">Personajes</a></span></li>
-            <li><a href="./bestiario.html">Bestiario</a></li>
-            <li><a href="./videojuegos.html">Videojuegos</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-         </ul>
-     </nav>
-    </header>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-black">
+        <div class="container-fluid">
+
+            <h1 class="logo"><a href="../index.html">Witcher of Blaviken</a></h1>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+          <div class="offcanvas offcanvas-start" id="menu" tabindex="-1">
+            <div class="offcanvas-header" data-bs-theme="dark">
+                <h5>Witcher of Blaviken</h5>
+                <button class="btn-close" type="button" aria-label="close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav opciones">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../views/personajes.html">Personajes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../views/bestiario.html">Bestiario</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../views/videojuegos.html">Videojuegos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="../views/contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+            </div>     
+          </div>
+        </div>
+      </nav>
     <h2 class="titulo">PERSONAJES</h2>
     <section class="main">
         <!-- Imagen con contorno blanco en forma de tarjeta con texto debajo y boton de ver mas -->
@@ -65,7 +90,9 @@
             <a href="https://twitter.com/witchergame" target="_blank"><img src="../assets/media/twitter.png" alt="twitter"></a>
             <a href="https://www.youtube.com/thewitcher" target="_blank"><img src="../assets/media/youtube.png" alt="youtube" ></a>
             <a href="https://www.facebook.com/ESthewitcher/?brand_redir=9659019330" target="_blank"><img src="../assets/media/facebook.png" alt="facebook"></a>
-        </div>
-    </footer>
+    </div>
+</footer>
+    <script src="../assets/js/popper.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
 </body>
 </html>

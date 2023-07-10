@@ -9,131 +9,281 @@
     src: url(../assets/fonts/NotoSerifGeorgian-VariableFont_wdth\,wght.ttf);
 }
 
-.selected a{
-    font-weight: bold;
-}
+
 
 body{
     background: #232323;
     font-family: 'Georgia';
     color: #f7f6f6;
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
     min-height: 100vh;
 }
 
-.cabecera{
-    background:black ;
+/* p{
+    font-size: 18px;
+} */
+
+/* Navbar */
+.selected a{
+    font-weight: bold;
+}
+
+.logo{
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-left: 10px;
+    font-size: 30px;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.logo a{
     font-family: 'Georgia';
     color: #f7f6f6;
-}
-
-.cabecera .logo{
-    margin-left: 50px;
-    position: relative;
-    top: 30px;
-}
-
-nav {
-    position: relative;
-    bottom: 20px;
-    left: 800px;
-    width: 600px;
-}
-.logo a {
     text-decoration: none;
-    color: #f7f6f6;
-}
-.menu {
-    display: inline-block;
-    position: relative;
-    /* left: 700px; */
-    padding: 20px;
+    font-weight: bold;
 }
 
-.menu li {
-    display: inline;
-    list-style: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    
+.offcanvas{
+       background-color: black;
 }
 
-.menu li:hover{
+.offcanvas-body{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+}
+
+.opciones{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item a:hover{
     text-underline-offset: 8px;
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
-.menu li a {
-    text-decoration: none;
-    font-size: 18px;
-    color: #f7f6f6;
-}
+/* fin navbar */
+
 .titulo{
     font-size: 30px;
-    margin:50px;
-}
-
-section.main{
-    margin:0 20px 50px 20px; 
+    padding:10px;
+    margin: 10px 0 10px 20px;
+    box-sizing: border-box;
 }
 
 .text-home {
-    display: inline-block;
     overflow: hidden;
-    width: 700px;
-    height: 800px;
-    margin-right: 50px;
-    margin-left: 30px;
+    padding: 20px;
 }
 
 .text-img {
-    display: inline-block;
-    margin-left: 50px;
-    width: 1000px;
-    height: 800px;
+    padding: 20px;
 }
 
 .text-img img{
-    width: 1000px;
-    height: 800px;
     border-radius: 20px;
 }
-section.galery{
-    text-align: center;
-    margin: 20px;
-}
-.g-img {
-  width: 45%;
-  display: inline-block;
-  margin: 10px;
-  text-align: center;
+
+.button-black{
+    background-color: black;
+    color: #f7f6f6;
 }
 
-.g-img img {
-    max-width: 800px;
-    max-height: 500px;
-}
-     
+ .container-fluid,section{
+    padding: 20px;
+ }
+
+/* Footer */
+
 .pie-pagina {
     position: absolute;
     background: black;
     bottom: 0;
     width: 100%;
     padding: 20px;
-    
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .pie-pagina div.info {
-    font-size: 12px;
+    flex: 1;
+    font-size: 13px;
     text-align: center;
-}
-.pie-pagina div.icons{
-    position: absolute;
-    top: 20px;
-    right: 20px;
 }
 
 .pie-pagina div.icons a{
     margin: 5px;
+}
+
+/* fin footer */
+
+/* Personajes */
+section.main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    margin:20px;
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: black;
+}
+.tarjeta img{
+    width: 100%;
+    height: auto;
+}
+.tarjeta h5{
+    font-weight: bold;
+}
+
+.contenedor-img{
+    display: flex;
+    justify-content: center;
+}
+.button-white{
+    background-color:#f7f6f6;
+    color: black;
+}
+
+.button-white:hover{
+    background: #A90101;
+}
+
+/* fin personajes */
+
+/* Bestiario */
+.table img{
+    width: auto;
+    height: 200px;
+}
+.table>thead>tr>th{
+    background: #303030;
+    color: #f7f6f6;
+    text-align: center;
+}
+.table>tbody>tr:nth-child(odd)>td, 
+.table>tbody>tr:nth-child(odd)>th {
+   background-color: #383838; 
+   color: #f7f6f6;
+   text-align: center;
+}
+.table>tbody>tr:nth-child(even)>td, 
+.table>tbody>tr:nth-child(even)>th {
+   background-color: #303030; 
+   color: #f7f6f6;
+   text-align: center;
+}
+
+
+@media only screen and (max-width:900px) {
+    #no-more-tables tbody,
+    #no-more-tables tr,
+    #no-more-tables td {
+        display: block;
+    }
+    #no-more-tables thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    #no-more-tables td {
+        position: relative;
+        padding-left: 50%;
+        border: none;
+        border-bottom: 1px solid #232323;
+    }
+    #no-more-tables td:last-child{
+        border-bottom:1px solid black;
+    }
+    #no-more-tables tr:last-child td{
+        border-bottom: none;
+    }
+    #no-more-tables td:before {
+        content: attr(data-title);
+        position: absolute;
+        left: 6px;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    
+}
+/* fin bestiario */
+
+/* Videojuegos */
+.video {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; 
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.shop a{
+   padding: 10px; 
+}
+/* falta hacer que el conseguilo en cuando es mobile pase a estar por debajo del video*/
+
+/* fin videojuegos */
+
+@media screen and (max-width:1199px) {
+    .pie-pagina {
+       padding: 10px;
+       box-sizing: border-box;
+       display: flex;
+       flex-direction: column;
+   } 
+   .video{
+       margin-top: 10px;
+   }
+   .opciones{
+    margin-left: 20px;
+   }
+   .opciones li{
+    border-bottom: 1px solid;
+   }
+   .opciones li:last-child{
+    border-bottom: none;
+   }
+   h5{
+    color: #f7f6f6;
+    margin-left: 10px;
+   }
+   .home{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   .tarjeta{
+    width: 50%;
+   }
+}
+
+@media screen and (max-width:768px) {
+    .tarjeta{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .tarjeta{
+        width: 100%;
+    }
 }

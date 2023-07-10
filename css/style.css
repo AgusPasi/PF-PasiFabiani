@@ -163,6 +163,64 @@ section.main{
 
 /* fin personajes */
 
+/* Bestiario */
+.table img{
+    width: auto;
+    height: 200px;
+}
+.table>thead>tr>th{
+    background: #303030;
+    color: #f7f6f6;
+    text-align: center;
+}
+.table>tbody>tr:nth-child(odd)>td, 
+.table>tbody>tr:nth-child(odd)>th {
+   background-color: #383838; 
+   color: #f7f6f6;
+   text-align: center;
+}
+.table>tbody>tr:nth-child(even)>td, 
+.table>tbody>tr:nth-child(even)>th {
+   background-color: #303030; 
+   color: #f7f6f6;
+   text-align: center;
+}
+
+
+@media only screen and (max-width:900px) {
+    #no-more-tables tbody,
+    #no-more-tables tr,
+    #no-more-tables td {
+        display: block;
+    }
+    #no-more-tables thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    #no-more-tables td {
+        position: relative;
+        padding-left: 50%;
+        border: none;
+        border-bottom: 1px solid #232323;
+    }
+    #no-more-tables td:last-child{
+        border-bottom:1px solid black;
+    }
+    #no-more-tables tr:last-child td{
+        border-bottom: none;
+    }
+    #no-more-tables td:before {
+        content: attr(data-title);
+        position: absolute;
+        left: 6px;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    
+}
+/* fin bestiario */
+
 /* Videojuegos */
 .video {
     position: relative;

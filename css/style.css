@@ -165,8 +165,7 @@ section.main{
 
 /* Bestiario */
 .table img{
-    width: auto;
-    height: 200px;
+    height: 200px; 
 }
 .table>thead>tr>th{
     background: #303030;

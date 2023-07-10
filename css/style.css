@@ -206,7 +206,7 @@ section.main{
     #no-more-tables td:last-child{
         border-bottom:1px solid black;
     }
-    #no-more-tables tr:last-child td{
+    #no-more-tables tr:last-child td:last-child{
         border-bottom: none;
     }
     #no-more-tables td:before {
@@ -258,6 +258,9 @@ section.main{
    }
    .opciones li{
     border-bottom: 1px solid;
+   }
+   .opciones a:hover{
+    text-decoration: none;
    }
    .opciones li:last-child{
     border-bottom: none;

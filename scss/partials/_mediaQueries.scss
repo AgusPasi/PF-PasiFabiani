@@ -1,0 +1,109 @@
+@import "./mixins";
+@media screen and (max-width:900px) {
+    #transformar{
+        tbody,
+        tr,
+        td{
+            display: block;
+        }
+
+        thead{
+            tr{
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+
+                
+            }
+        }
+
+        td{
+            position: relative;
+            padding-left: 50%;
+            border: none;
+            border-bottom: 1px solid #232323;
+
+            &:last-child{
+                border-bottom:1px solid black;
+            }
+
+            &::before{
+                content: attr(data-title);
+                position: absolute;
+                left: 6px;
+                margin-left: 10px;
+                font-weight: bold;
+            }
+        }
+
+        tr:last-child,td:last-child{
+            border-bottom: none;
+        }
+
+        
+    }
+}
+
+
+@media screen and (max-width:1199px) {
+    .pie-pagina {
+        padding: 10px;
+        box-sizing: border-box;
+        @include applyFlex(column);
+    } 
+
+    .video{
+        margin-top: 10px;
+    }
+    .offcanvas{
+        h5{
+            color: #f7f6f6;
+            margin-left: 10px;
+         }
+        .offcanvas-body{
+            .opciones{
+                margin-left: 20px;
+        
+                li{
+                    border-bottom: 1px solid;
+        
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                }
+        
+                a{
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+        }
+    }
+    .home{
+    @include applyFlex(column-reverse);
+    }
+    .main{
+        .tarjeta{
+            width: 50%;
+        }
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .main{
+        .tarjeta{
+            width: 75%;
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .main{
+        .tarjeta{
+            width: 100%;
+        }
+    }
+}

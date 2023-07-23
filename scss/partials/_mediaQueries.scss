@@ -1,3 +1,4 @@
+@import "./mixins";
 @media screen and (max-width:900px) {
     #transformar{
         tbody,
@@ -48,8 +49,7 @@
     .pie-pagina {
         padding: 10px;
         box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
+        @include applyFlex(column);
     } 
 
     .video{
@@ -82,8 +82,7 @@
         }
     }
     .home{
-    display: flex;
-    flex-direction: column-reverse;
+    @include applyFlex(column-reverse);
     }
     .main{
         .tarjeta{

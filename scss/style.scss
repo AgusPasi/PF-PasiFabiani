@@ -57,6 +57,7 @@ body{
     .text-home{
         overflow: hidden;
         padding: 20px;
+        text-align: justify;
     }
     .text-img{
         padding: 20px;
@@ -131,7 +132,6 @@ body{
         padding: 20px;
         box-sizing: border-box;
         background-color: black;
-
         img{
             width: 100%;
             height: auto;
@@ -210,6 +210,9 @@ body{
             }
         }
         .lote-texto{
+            .texto{
+                text-align: justify;
+            }
             .shop{
                 a{
                     padding: 10px;
